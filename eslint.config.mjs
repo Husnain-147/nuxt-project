@@ -9,7 +9,6 @@ export default withNuxt([
   {
     plugins: {
       prettier,
-      pluginVue,
     },
     rules: {
       // This runs Prettier as an ESLint rule
@@ -17,7 +16,13 @@ export default withNuxt([
 
       // Turn off rules that conflict with Prettier
       ...prettierConfig.rules,
-
+    },
+  },
+  {
+    plugins: {
+      vue: pluginVue,
+    },
+    rules: {
       // Vue Component Naming and Structure
       'vue/component-name-in-template-casing': ['error', 'PascalCase'],
       'vue/component-definition-name-casing': ['error', 'PascalCase'],
@@ -53,10 +58,10 @@ export default withNuxt([
       'vue/no-deprecated-filter': 'error',
       'vue/valid-v-slot': 'error',
 
-      // TypeScript Integration if gonna use
-      // '@typescript-eslint/explicit-function-return-type': 'off', // Often inferred
-      // '@typescript-eslint/no-explicit-any': 'warn',
-      // '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
+      // Accessibility
+      'vue/no-potential-component-option-typo': 'error',
+      'vue/custom-event-name-casing': ['error', 'kebab-case'],
+      'vue/no-template-target-blank': 'error', // Security improvement
 
       // General code quality
       'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
