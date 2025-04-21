@@ -1,4 +1,3 @@
-// @ts-check
 import prettierConfig from 'eslint-config-prettier'
 import prettier from 'eslint-plugin-prettier'
 import pluginVue from 'eslint-plugin-vue'
