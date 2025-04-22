@@ -36,11 +36,12 @@ Locally preview production build:
 pnpm preview
 ```
 
-## Update Nuxt to its latest Stable version
+## Update Packages
 
 ```bash
 # pnpm
-pnpm run update
+pnpm run update-nuxt # update Nuxt to its latest stable version
+pnpm run check-and-update-packages # check for outdated packages and update them
 ```
 
 ## Linting and Formatting
@@ -51,5 +52,16 @@ pnpm lint # run linting
 pnpm lint:fix # fix linting issues
 pnpm format # run formatting
 ```
+
+## Extensions
+
+You can also use the following extensions to enhance your development experience:
+
+- Tailwind CSS Intellisense (Recommended)
+- Prettier - Code formatter (Recommended)
+- ESLint (Recommended)
+- Vue (Recommended)
+- Auto Import (Optional)
+- GitLens (Optional)
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

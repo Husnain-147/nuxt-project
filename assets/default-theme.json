@@ -1,0 +1,15 @@
+{
+  "color-primary": "#e64a19",
+  "color-primary-dark": "#ac0800",
+  "color-secondary": "#2e7d32",
+  "color-secondary-dark": "#005005",
+  "color-accent": "#ffc107",
+  "color-success": "#4caf50",
+  "color-warning": "#ff9800",
+  "color-error": "#f44336",
+  "color-nfo": "#2196f3",
+  "color-background": "#ffffff",
+  "color-surface": "#f5f5f5",
+  "color-text": "#212121",
+  "color-text-secondary": "#757575"
+}

@@ -8,6 +8,7 @@ export default withNuxt([
   {
     plugins: {
       prettier,
+      vue: pluginVue,
     },
     rules: {
       // This runs Prettier as an ESLint rule
@@ -15,13 +16,6 @@ export default withNuxt([
 
       // Turn off rules that conflict with Prettier
       ...prettierConfig.rules,
-    },
-  },
-  {
-    plugins: {
-      vue: pluginVue,
-    },
-    rules: {
       // Vue Component Naming and Structure
       'vue/component-name-in-template-casing': ['error', 'PascalCase'],
       'vue/component-definition-name-casing': ['error', 'PascalCase'],
